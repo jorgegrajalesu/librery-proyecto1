@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700;900&family=Roboto:wght@300;400;700;900&display=swap');
+
+/* configuración de constantes */
+:root{
+    /* colores */
+    --colorEncabezado:#fff;
+    --colorPie:#000;
+    --colorEnlace:#792a0b;
+    --colorEnlaceSobre:#073663;
+
+    /* fuente */
+    --textos:'Roboto', sans-serif;
+    --titulos:'Lato', sans-serif;
+
+
+}
+
+/* utilizar el selector universal que es (*)  */
+
+*{
+    box-sizing: border-box;
+}
+
+/* aplicar estilos a la clase .home-wrapper, no se puede
+ escribir la palabra class
+ */
+
+ .home-wrapper{
+    /* imagen de fondo */
+    background-image: url('../images/fondo.jpeg');
+    /* tamaño de la imagen de fondo */
+    background-size: cover;
+ }
+
+ /* aplicar estilos al encabezado o header que es
+ un selector de etiqueta en css */
+ 
+ header{
+    /* ancho */
+    width: 100%;
+    /* color de fondo */
+    background-color: var(--colorEncabezado);
+    /* posicion del encabezado fijo*/
+    position: fixed;
+    /* espaciados */
+    padding: 10px 0;
+    margin-top: -40px;
+
+ }
+
+ /* dimensionar el tamaño del logo, 
+ combinar selectores de etiquetas css */
+
+ header img{
+    width: 150px;
+ }
+
+ /* posicionar el menu de navegación a la derecha */
+
+ header nav{
+    float: right;
+    /* margen arriba */
+    margin-top: 45px;
+ }
+
+ /* aplicar estilos a los enlaces */
+ header nav a{
+    color: var(--colorEnlace);
+    /* quitar el subrayado */
+    text-decoration: none;
+    margin-left: 6px;
+    font-family: var(--textos);
+    font-size: 1.2rem;
+    
+ }
+
+ /* estilos a los enlaces en el estado sobre (hover) */
+ header nav a:hover{
+   color: var(--colorEnlaceSobre);
+   font-weight: bold;
+ }
+
+ /* estilos para la sección promoción */
+ #promocion{
+   text-align: center;
+   padding: 250px 0 250px 0;
+   
+ }
+
+ /* estilos al h1 de la sección promoción */
+ #promocion h1{
+   font-size: 2.5rem;
+   color: var(--colorEncabezado);
+   font-weight: bold;
+
+ }
+
+ /* estilos a la p de la sección promoción */
+ #promocion p{
+   font-size: 1.5rem;
+   color: var(--colorEncabezado);
+   margin-top: 50px;
+   font-weight: 700;
+
+ }
+
+ /* estilos a la clase container */
+ .container {
+   width: 100%;
+   margin-left: auto;
+   margin-right: auto;
+ }
+
+ #novedades .box{
+   display: inline-block;
+   width: 33%;
+   padding: 8px;
+   
+ }
+
+ #novedades .box img{
+   width: 100%;
+   height: 400px;
+ }
+
+ #novedades .box h3{
+  text-align: center;
+ }
+ 
+ /* sección categoría */
+ #categoria .box{
+  display: inline-block;
+  width: 33%;
+  padding: 8px;
+ }
+
+ #categoria .box img{
+  width: 100%;
+  height: 500px;
+ }
+
+ #categoria .box h3{
+  text-align: center;
+ }
+
+/* estilos a las secciones o section */
+section{
+  padding: 120px 0;
+}
+
+section h2{
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+}
+
+/* sección contacto */
+#contacto{
+  width: 100%;
+  text-align: center;
+  margin: 0 auto;
+  background-color: #09035e;
+  /* background-image: url('../images/fondo.jpeg'); */
+  /* background-size:cover; */ 
+
+}
+
+#contacto h2,
+label{
+  color: #fff;
+  width: 100%;
+}
+
+#contacto input,
+textarea{
+  width: 600px;
+  border-radius: 10px;
+  padding: 10px 5px;
+
+}
+
+/* footer */
+footer {
+  width: 100%;
+  padding: 20px 0;
+  color: #fff;
+  background-color:var(--colorPie);
+  text-align:center;
+}
+
+iframe {
+  width: 100% !important;
+  height: 600px !important;
+  margin: 0 auto;
+
+}
+
+
+
+
+ 
